@@ -24,11 +24,11 @@ document.addEventListener("DOMContentLoaded", () => {
         img.src = player.image
 
         const p = document.createElement('p')
-        p.textContent = `age: ${player.age}
-        number: ${player.jerseyNumber}
-        preffered foot: ${player.preferredFoot}
-        national team: ${player.nationalTeam}
-        position: ${player.position}`
+        p.innerHTML = `Age: ${player.age}<br>
+        Number: ${player.jerseyNumber}<br>
+        Preffered foot: ${player.preferredFoot}<br>
+        National team: ${player.nationalTeam}<br>
+        Position: ${player.position}`
 
         const button = document.createElement('button')
         button.classList.add('like-btn')
