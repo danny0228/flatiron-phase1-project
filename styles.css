@@ -1,3 +1,5 @@
-body {
-    background-color: maroon;
+img {
+    display: block;
+    width: 60%;
+    margin: auto;
 }
