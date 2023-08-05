@@ -28,7 +28,8 @@ document.addEventListener("DOMContentLoaded", () => {
         Number: ${player.jerseyNumber}<br>
         Preffered foot: ${player.preferredFoot}<br>
         National team: ${player.nationalTeam}<br>
-        Position: ${player.position}`
+        Position: ${player.position}<br>
+        ${player.likes} likes`
 
         const button = document.createElement('button')
         button.classList.add('like-btn')
