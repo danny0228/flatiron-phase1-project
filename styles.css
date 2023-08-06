@@ -9,13 +9,21 @@ img {
 }
 
 h1 {
+    font-family: papyrus;
     color: white;
 }
 
 h2 {
+    font-family: papyrus;
+    color: white;
+}
+
+h3 {
+    font-family: papyrus;
     color: white;
 }
 
 p {
+    font-family: papyrus;
     color: white;
 }
