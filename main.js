@@ -1,4 +1,5 @@
 console.log("conectado!!")
+let addPlayer = false;
 
 document.addEventListener("DOMContentLoaded", () => {
 
@@ -60,4 +61,35 @@ document.addEventListener("DOMContentLoaded", () => {
             .then(res => res.json())
             .then(player => console.log(player))
     }
+
+    const addBtn = document.querySelector("#new-player-btn")
+    const formContainer = document.querySelector(".container")
+    const playerForm = document.querySelector(".add-favorite-player")
+
+    playerForm.addEventListener('submit', (e) => {
+        e.preventDefault()
+        const data = Object.fromEntries(new FormData(e.target))
+        data.likes = 0
+
+        fetch("http://localhost:3000/barcelonaPlayers", {
+            method: 'POST',
+            headers: {
+                "Content-Type": "application/json",
+                Accept: "application/json"
+            },
+            body: JSON.stringify(data)
+        })
+            .then(res => res.json())
+            .then(data => renderCard(data))
+    })
+
+    addBtn.addEventListener("click", () => {
+        addPlayer = !addPlayer
+        if (addPlayer) {
+            formContainer.style.display = "block"
+        } else {
+            formContainer.style.display = "none"
+        }
+    })
+
 })
