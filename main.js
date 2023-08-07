@@ -48,6 +48,15 @@ document.addEventListener("DOMContentLoaded", () => {
             card.querySelector('#p2').textContent = `${player.likes} likes`
             updateLikes(player)
         })
+        let images = document.querySelectorAll('img')
+        images.forEach(image => {
+            image.addEventListener('mouseover', () => {
+                image.style.width = '70%'
+            })
+            image.addEventListener('mouseout', () => {
+                image.style.width = '50%'
+            })
+        })
     }
 
     function updateLikes(playerList) {
