@@ -51,10 +51,10 @@ document.addEventListener("DOMContentLoaded", () => {
         let images = document.querySelectorAll('img')
         images.forEach(image => {
             image.addEventListener('mouseover', () => {
-                image.style.width = '70%'
+                image.style.width = '50%'
             })
             image.addEventListener('mouseout', () => {
-                image.style.width = '50%'
+                image.style.width = '35%'
             })
         })
     }
