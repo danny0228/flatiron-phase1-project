@@ -12,3 +12,6 @@ Once the application is open, we are able to see some of the most important play
 ## Contributions
 Not looking for any contributions.
 
+## License
+GNU GENERAL PUBLIC LICENSE
+Version 3, 29 June 2007.
